@@ -11,7 +11,8 @@ body {
 }
 
 #infoCardi {
-  width: 100%;
+  width: 1140px;
+  margin: auto;
   padding: 9px;
   background-color: #D9EDF7;
   border: 2px solid #BCE8F1;
@@ -24,7 +25,8 @@ body {
 }
 
 #infoForm {
-  width: 100%;
+  width: 1140px;
+  margin: auto;
   display: flex;
   height: 53px;
   align-items: center;
@@ -72,11 +74,13 @@ body {
 
 #cardi {
   display: flex;
-  width: 100%;
+  width: 1140px;
+  margin: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 150px;
 }
 
 #cardi #cardiLogo {
@@ -118,33 +122,107 @@ body {
   font-weight: bold;
 }
 
-@media(max-width: 768px) {
-  #infoForm .inputFormText {
-    width: 150px;
+@media(min-width: 320px) {
+  #infoCardi {
+    width: 280px;
+    overflow: hidden;
   }
-
+  
+  #infoForm {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 115px;
+    width: 280px;
+  }
+  
+  #infoForm .inputFormText {
+    margin-left: 10px;
+    margin-top: -15px;
+    width: 280px;
+  }
+  
   #cardi {
-    width: 100%;
+    overflow: hidden;
+    width: 280px;
   }
 }
 
-@media(max-width: 425px) {
-  #container {
-    width: 100%;
-    padding: 0 10px;
-    padding-bottom: 300px;
+@media(min-width: 375px) {
+  #infoCardi {
+    width: 340px;
+    overflow: hidden;
+  }
+  
+  #infoForm {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 115px;
+    width: 340px;
+  }
+  
+  #infoForm .inputFormText {
+    margin-left: 10px;
+    margin-top: -15px;
+    width: 340px;
+  }
+  
+  #cardi {
+    overflow: hidden;
+    width: 340px;
+  }
+}
+
+@media(min-width: 425px) {
+  #infoCardi {
+    width: 360px;
+    overflow: hidden;
+  }
+  
+  #infoForm {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 115px;
+    width: 360px;
+  }
+  
+  #infoForm .inputFormText {
+    margin-left: 10px;
+    margin-top: -15px;
+    width: 360px;
+  }
+  
+  #cardi {
+    overflow: hidden;
+    width: 360px;
+  }
+}
+
+@media(min-width: 770px) {
+  #infoCardi {
+    width: 690px;
+  }
+
+  #infoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 115px;
+    width: 690px;
   }
 
   #infoForm .inputFormText {
-    width: 130px;
+    margin-left: 10px;
+    margin-top: -15px;
+    width: 670px;
   }
 
-  #infoForm p {
-    padding-left: 3px;
-    padding-right: 1px;
-  }
-
-  #infoForm input[type='button'] {
-    margin-left: 3px;
+  #cardi {
+    width: 690px;
   }
 }
